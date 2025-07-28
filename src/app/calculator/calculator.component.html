@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body class="main-container">
+  <div>
+    <div class="display-container">
+  <div class="input-display">{{ displayInput }}</div>
+  <div class="result-display">{{ result }}</div>
+</div>
+<h1>Calculator</h1>
+    <div class="calc-grid">
+      <button *ngFor="let btn of buttonLayout" (click)="onButtonClick(btn)">{{ btn }}</button>
+       <button class="clear-button" (click)="clearValues()">Clear Me</button>
+    </div>
+  </div>
+</body>
+</html>
